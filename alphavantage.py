@@ -1,6 +1,8 @@
 import requests
 import pandas as pd
-def preprocess(symbol):
+
+def get_stock_data(symbol='IBM'):
+
     base = 'https://www.alphavantage.co'
     endpoint = '/query'
     URL=  base + endpoint
